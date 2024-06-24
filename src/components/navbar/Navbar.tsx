@@ -4,7 +4,7 @@ import React from "react";
 
 const navbarItems = [
   "contact us",
-  "browse listing",
+  "Browse Public Listings",
   "sell with us",
   "claim your account",
 ];

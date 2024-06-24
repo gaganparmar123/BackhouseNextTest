@@ -107,9 +107,11 @@ const equipmentData = [
 
 const EquipmentCarousel = () => {
   return (
-    <div className="mt-8 lg:mt-10 px-8 custom-slider">
+    <div className="px-8 py-8 lg:py-10 custom-slider">
       <div>
-        <h1 className="text-lg font-bold mb-4">Trending Items</h1>
+        <h1 className="text-xl font-extrabold xl:text-2xl font-bold mb-4">
+          Trending Items
+        </h1>
       </div>
       <Slider {...settings} className="h-full">
         {equipmentData?.map((data) => (
@@ -129,7 +131,6 @@ const EquipmentCarousel = () => {
           </div>
         ))}
       </Slider>
-      <Promotion />
     </div>
   );
 };

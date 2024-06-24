@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
 import AllImages from "@/constant/images";
+import Promotion from "../promotion/Promotion";
 
 var settings = {
   infinite: false,
@@ -40,30 +41,35 @@ var settings = {
 
 const equipmentData = [
   {
+    id: 1,
     img: AllImages?.Equipment1,
     name: "60 Quart Hobart Mixer",
     price: "$4200",
     binding: "Bidding ends in 8 days",
   },
   {
+    id: 2,
     img: AllImages?.Equipment1,
     name: "60 Quart Hobart Mixer",
     price: "$4200",
     binding: "Bidding ends in 8 days",
   },
   {
+    id: 3,
     img: AllImages?.Equipment1,
     name: "60 Quart Hobart Mixer",
     price: "$4200",
     binding: "Bidding ends in 8 days",
   },
   {
+    id: 4,
     img: AllImages?.Equipment1,
     name: "60 Quart Hobart Mixer",
     price: "$4200",
     binding: "Bidding ends in 8 days",
   },
   {
+    id: 5,
     img: AllImages?.Equipment1,
     name: "60 Quart Hobart Mixer",
     price: "$4200",
@@ -79,7 +85,7 @@ const EquipmentCarousel = () => {
       </div>
       <Slider {...settings} className="h-full">
         {equipmentData?.map((data) => (
-          <div className="px-4">
+          <div className="px-4" key={data.id}>
             <div className="bg-[#F3F4F6] rounded-xl" key={data?.name}>
               <Image
                 src={data?.img}
@@ -95,6 +101,7 @@ const EquipmentCarousel = () => {
           </div>
         ))}
       </Slider>
+      <Promotion />
     </div>
   );
 };

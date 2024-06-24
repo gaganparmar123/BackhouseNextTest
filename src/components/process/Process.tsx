@@ -31,24 +31,28 @@ const processData = [
 
 const Process = () => {
   return (
-    <div className="py-8 px-4 mx-auto max-w-screen-lg lg:py-10 md:px-6">
+    <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-10 md:px-6">
       <div>
         <h1 className="text-2xl md:text-5xl font-extrabold uppercase text-center mb-8">
-          How it <span className="text-primary-10">works</span>
+          How it <span className="text-primary-10">Process</span>
         </h1>
       </div>
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
         {processData?.map((data) => (
           <div
-            className="p-6 bg-[#F6F5F4] w-full rounded-2xl border border-gray-300 my-4 hover:shadow-lg"
+            className="p-6 bg-[#F6F5F4] w-full rounded-2xl border border-gray-300 my-2 md:my-4 hover:shadow-lg text-center"
             key={data?.title}
           >
-            <div className="flex items-center gap-4">
-              <div className="text-primary-10">{data?.icon}</div>
-              <h2 className="text-xl lg:text-3xl font-bold">{data?.title}</h2>
+            <div className="gap-4">
+              <div className="w-[70px] h-[70px] bg-white rounded-full flex items-center justify-center mx-auto">
+                <div className="text-primary-10">{data?.icon}</div>
+              </div>
+              <h2 className="text-xl lg:text-2xl font-bold mt-4">
+                {data?.title}
+              </h2>
             </div>
             <div>
-              <p className="lg:text-lg mt-4">{data?.description}</p>
+              <p className="lg:text-base mt-4">{data?.description}</p>
             </div>
           </div>
         ))}

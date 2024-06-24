@@ -69,7 +69,7 @@ const HomePage = () => {
           />
         </div>
       </Slider>
-      <div className="absolute bottom-[5px] left-0 w-full h-full bg-black/[0.70] flex flex-col justify-end p-10">
+      <div className="absolute bottom-[5px] left-0 w-full h-full bg-black/[0.80] flex flex-col justify-end p-10">
         <div className="w-full lg:max-w-[70%] md:mb-24 lg:mb-0">
           <div>
             <h1 className="text-xl md:text-4xl lg:text-6xl text-white font-extrabold">

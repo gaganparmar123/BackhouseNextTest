@@ -2,14 +2,14 @@ import React from "react";
 
 const NewsLetterBanner = () => {
   return (
-    <section className="mt-8 bg-white dark:bg-gray-900">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div className="p-12 flex items-center justify-center mx-auto bg-black text-white rounded-xl">
+    <section className="bg-white">
+      <div className="py-8 px-4 mx-auto max-w-screen-lg lg:py-10 md:px-6">
+        <div className="p-12 flex lg:flex-row flex-col gap-4 lg:gap-0 text-center lg:text-left items-center justify-center mx-auto bg-black text-white rounded-xl">
           <div>
-            <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-white sm:text-4xl dark:text-white">
+            <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-white">
               Sign up for our newsletter
             </h2>
-            <p className="mx-auto mb-4 max-w-2xl font-light text-gray md:mb-4 sm:text-xl dark:text-gray-400">
+            <p className="mx-auto mb-4 max-w-2xl font-light text-gray md:mb-4 text-lg">
               Stay up to date with the roadmap progress, announcements and
               exclusive discounts. Be the first to know about relevant listings.
             </p>
@@ -19,7 +19,7 @@ const NewsLetterBanner = () => {
               <div className="relative w-full">
                 <label
                   htmlFor="email"
-                  className="hidden mb-2 text-sm font-medium text-white dark:text-gray-300"
+                  className="hidden mb-2 text-sm font-medium text-white"
                 >
                   Email address
                 </label>
@@ -35,7 +35,7 @@ const NewsLetterBanner = () => {
                   </svg>
                 </div>
                 <input
-                  className="block p-3 pl-10 w-full text-sm text-white bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  className="block p-3 pl-10 w-full text-sm text-white bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500"
                   placeholder="Enter your email"
                   type="email"
                   id="email"
@@ -51,8 +51,8 @@ const NewsLetterBanner = () => {
                 </button>
               </div>
             </div>
-            <div className="mx-auto max-w-screen-sm text-sm text-left text-white newsletter-form-footer dark:text-gray-300">
-              We care about the protection of your data.{" "}
+            <div className="mx-auto max-w-screen-sm text-sm text-left text-white newsletter-form-footer text-center">
+              We care about the protection of your data.
               <a
                 href="#"
                 className="font-medium text-primary-10 hover:underline"

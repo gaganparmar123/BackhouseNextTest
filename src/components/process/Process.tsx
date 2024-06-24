@@ -31,9 +31,9 @@ const processData = [
 
 const Process = () => {
   return (
-    <div className="mt-10 lg:mt-14 px-8">
+    <div className="py-8 px-4 mx-auto max-w-screen-lg lg:py-10 md:px-6">
       <div>
-        <h1 className="text-2xl md:text-4xl lg:text-6xl font-extrabold uppercase text-center mb-8">
+        <h1 className="text-2xl md:text-5xl font-extrabold uppercase text-center mb-8">
           How it <span className="text-primary-10">works</span>
         </h1>
       </div>

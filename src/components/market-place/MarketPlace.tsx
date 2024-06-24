@@ -4,14 +4,14 @@ import React from "react";
 
 const MarketPlace = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
-      <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+    <section className="bg-white">
+      <div className="grid py-8 px-4 mx-auto max-w-screen-lg lg:py-10 md:px-6 lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
-          <h1 className="max-w-xl mb-4 text-xl font-extrabold tracking-tight leading-none md:text-xl xl:text-2xl dark:text-white">
+          <h1 className="max-w-xl mb-4 text-xl font-extrabold tracking-tight leading-none md:text-xl xl:text-2xl">
             Tired of failing to sell your items on Facebook Marketplace or
             through an auctioneer?
           </h1>
-          <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+          <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
             Backhouse is the first nationwide restaurant equipment marketplace
             giving you access to verified buyers
           </p>

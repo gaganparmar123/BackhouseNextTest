@@ -22,21 +22,49 @@ const HomePage = () => {
         <div className="h-[100vh]">
           <Image
             src={AllImages?.HomePageBg1}
-            alt="bg"
+            alt="bg1"
             className="h-full object-cover"
           />
         </div>
         <div className="h-[100vh]">
           <Image
-            src={AllImages?.HomePageBg1}
-            alt="bg"
+            src={AllImages?.HomePageBg2}
+            alt="bg2"
             className="h-full object-cover"
           />
         </div>
         <div className="h-[100vh]">
           <Image
-            src={AllImages?.HomePageBg1}
-            alt="bg"
+            src={AllImages?.HomePageBg3}
+            alt="bg3"
+            className="h-full object-cover"
+          />
+        </div>
+        <div className="h-[100vh]">
+          <Image
+            src={AllImages?.HomePageBg4}
+            alt="bg4"
+            className="h-full object-cover"
+          />
+        </div>
+        <div className="h-[100vh]">
+          <Image
+            src={AllImages?.HomePageBg5}
+            alt="bg5"
+            className="h-full object-cover"
+          />
+        </div>
+        <div className="h-[100vh]">
+          <Image
+            src={AllImages?.HomePageBg6}
+            alt="bg6"
+            className="h-full object-cover"
+          />
+        </div>
+        <div className="h-[100vh]">
+          <Image
+            src={AllImages?.HomePageBg7}
+            alt="bg7"
             className="h-full object-cover"
           />
         </div>

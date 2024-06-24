@@ -7,7 +7,7 @@ const AiButton = () => {
   const [showPopover, setShowPopover] = useState(false);
   const [fixedPopover, setFixedPopover] = useState(false);
   return (
-    <div className="fixed bottom-4 right-8 flex justify-center">
+    <div className="fixed bottom-6 right-8 flex justify-center">
       <button
         type="button"
         className="text-gray-600 bg-primary-10 hover:bg-[#f5bb09] focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 me-3 text-center"

@@ -120,7 +120,7 @@ const EquipmentCarousel = () => {
               <Image
                 src={data?.img}
                 alt="bg"
-                className="h-[192px] object-cover rounded-t-lg"
+                className="h-[192px] 2xl:h-[232px] object-cover rounded-t-lg"
               />
               <div className="flex flex-col gap-2 p-3">
                 <h3 className="text-lg font-bold">{data?.name}</h3>

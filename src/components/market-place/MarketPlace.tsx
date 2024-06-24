@@ -5,7 +5,7 @@ import React from "react";
 const MarketPlace = () => {
   return (
     <section className="bg-white">
-      <div className="grid py-8 px-4 mx-auto max-w-screen-lg lg:py-10 md:px-6 lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12">
+      <div className="grid py-8 px-4 mx-auto max-w-screen-xl lg:py-10 md:px-6 lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
           <h1 className="max-w-xl mb-4 text-xl font-extrabold tracking-tight leading-none md:text-xl xl:text-2xl">
             Tired of failing to sell your items on Facebook Marketplace or

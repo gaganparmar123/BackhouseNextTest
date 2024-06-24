@@ -1,6 +1,7 @@
-import AllImages from "@/constant/images";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import { MdMenu } from "react-icons/md";
+import AllImages from "@/constant/images";
 
 const navbarItems = [
   "contact us",
@@ -16,7 +17,19 @@ const Navbar = () => {
         <div>
           <Image src={AllImages?.Logo} alt="logo" height={50} width={250} />
         </div>
-        <div className="flex gap-4 capitalize p-6">
+        <div>
+          <button
+            id="nav-toggle-button"
+            data-hs-collapse="navbar-default"
+            type="button"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <MdMenu className="text-5xl text-white" />
+          </button>
+        </div>
+        <div className="flex gap-4 capitalize p-6 hidden lg:flex">
           {navbarItems?.map((item) => (
             <div
               key={item}

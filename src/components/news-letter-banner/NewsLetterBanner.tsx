@@ -3,7 +3,7 @@ import React from "react";
 const NewsLetterBanner = () => {
   return (
     <section className="bg-white">
-      <div className="py-8 px-4 mx-auto max-w-screen-lg lg:py-10 md:px-6">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-10 md:px-6">
         <div className="p-12 flex lg:flex-row flex-col gap-4 lg:gap-0 text-center lg:text-left items-center justify-center mx-auto bg-black text-white rounded-xl">
           <div>
             <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-white">

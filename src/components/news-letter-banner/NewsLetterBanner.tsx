@@ -25,7 +25,7 @@ const NewsLetterBanner = () => {
                 </label>
                 <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                   <svg
-                    className="w-5 h-5 text-gray-500 dark:text-gray-400"
+                    className="w-5 h-5 text-gray-500"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ const NewsLetterBanner = () => {
               <div>
                 <button
                   type="submit"
-                  className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  className="py-3 px-5 w-full text-sm font-medium text-center text-gray-600 rounded-lg border cursor-pointer bg-primary-10 border-[#f5bb09] sm:rounded-none sm:rounded-r-lg hover:bg-[#f5bb09] focus:ring-4 focus:ring-primary-300"
                 >
                   Subscribe
                 </button>
@@ -55,7 +55,7 @@ const NewsLetterBanner = () => {
               We care about the protection of your data.{" "}
               <a
                 href="#"
-                className="font-medium text-primary-600 dark:text-primary-500 hover:underline"
+                className="font-medium text-primary-10 hover:underline"
               >
                 Read our Privacy Policy
               </a>

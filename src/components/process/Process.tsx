@@ -13,7 +13,7 @@ const processData = [
   {
     title: "Elevate",
     description:
-      "Our experts find you the best deals through access to our private listing network",
+      "Our experts will find you the best deals through access to our private listing network",
     icon: <MdOutlineVerified className="text-2xl lg:text-3xl" />,
   },
   {
@@ -34,7 +34,7 @@ const Process = () => {
     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-10 md:px-6">
       <div>
         <h1 className="text-2xl md:text-5xl font-extrabold uppercase text-center mb-8">
-          How it <span className="text-primary-10">Process</span>
+          <span className="text-primary-10">Process</span> to follow
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">

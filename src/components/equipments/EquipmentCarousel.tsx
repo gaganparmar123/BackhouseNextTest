@@ -107,7 +107,7 @@ const equipmentData = [
 
 const EquipmentCarousel = () => {
   return (
-    <div className="py-8 lg:py-10 mx-auto max-w-screen-xl px-4 xl:px-0">
+    <div className="py-8 lg:py-10 mx-auto max-w-screen-xl px-4 2xl:px-0">
       <div className="custom-slider">
         <div className="text-center">
           <h1 className="font-extrabold tracking-tight leading-none text-xl md:text-4xl mb-4 lg:mb-6">
@@ -123,7 +123,10 @@ const EquipmentCarousel = () => {
         <Slider {...settings} className="h-full">
           {equipmentData?.map((data) => (
             <div className="px-4 pt-4" key={data.id}>
-              <div className="bg-[#F3F4F6] border border-gray overflow-hidden rounded-xl  hover:translate-y-[-8px] transition" key={data?.name}>
+              <div
+                className="bg-[#F3F4F6] border border-gray overflow-hidden rounded-xl  hover:translate-y-[-8px] transition"
+                key={data?.name}
+              >
                 <Image
                   src={data?.img}
                   alt="bg"

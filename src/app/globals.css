@@ -15,7 +15,9 @@
 .custom-slider .slick-next {
   right: -10px;
 }
-
+.home-slider .slick-list, .home-slider .slick-track, .home-slider .slick-slide > div{
+  height: 100%;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

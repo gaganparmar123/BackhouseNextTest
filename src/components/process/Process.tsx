@@ -33,18 +33,18 @@ const Process = () => {
   return (
     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-10 md:px-6">
       <div>
-        <h1 className="text-2xl md:text-5xl font-extrabold uppercase text-center mb-8">
-          <span className="text-primary-10">Process</span> to follow
+        <h1 className="font-extrabold text-xl md:text-4xl lg:text-6xl/[80px] uppercase text-center mb-8">
+          Process to <span className="text-primary-10">follow </span>
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 md:pt-10">
         {processData?.map((data) => (
           <div
-            className="p-6 bg-[#F6F5F4] w-full rounded-2xl border border-gray-300 my-2 md:my-4 hover:shadow-lg text-center"
+            className="p-6 bg-[#F6F5F4] w-full rounded-2xl border border-gray-300 my-2 md:my-4 hover:shadow-lg text-center mt-8"
             key={data?.title}
           >
             <div className="gap-4">
-              <div className="w-[70px] h-[70px] bg-white rounded-full flex items-center justify-center mx-auto">
+              <div className="w-[70px] h-[70px] bg-white rounded-full flex items-center justify-center mx-auto mt-[-60px] border border-gray-300">
                 <div className="text-primary-10">{data?.icon}</div>
               </div>
               <h2 className="text-xl lg:text-2xl font-bold mt-4">

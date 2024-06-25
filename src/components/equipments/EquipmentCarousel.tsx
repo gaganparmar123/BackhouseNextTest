@@ -107,30 +107,38 @@ const equipmentData = [
 
 const EquipmentCarousel = () => {
   return (
-    <div className="px-8 py-8 lg:py-10 custom-slider">
-      <div>
-        <h1 className="text-xl font-extrabold xl:text-2xl font-bold mb-4">
-          Trending Items
-        </h1>
-      </div>
-      <Slider {...settings} className="h-full">
-        {equipmentData?.map((data) => (
-          <div className="px-4" key={data.id}>
-            <div className="bg-[#F3F4F6] rounded-xl" key={data?.name}>
-              <Image
-                src={data?.img}
-                alt="bg"
-                className="h-[192px] 2xl:h-[232px] object-cover rounded-t-lg"
-              />
-              <div className="flex flex-col gap-2 p-3">
-                <h3 className="text-lg font-bold">{data?.name}</h3>
-                <p className="text-xs">{data?.price}</p>
-                <p className="text-sm">{data?.binding}</p>
+    <div className="py-8 lg:py-10 mx-auto max-w-screen-xl px-4 xl:px-0">
+      <div className="custom-slider">
+        <div className="text-center">
+          <h1 className="font-extrabold tracking-tight leading-none text-xl md:text-4xl mb-4 lg:mb-6">
+            Trending <span className="text-primary-10">Items</span>
+          </h1>
+          <p className="max-w-5xl mx-auto mb-6 text-sm text-gray-500 lg:mb-8 md:text-xs lg:text-base">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industrys standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+        </div>
+        <Slider {...settings} className="h-full">
+          {equipmentData?.map((data) => (
+            <div className="px-4 pt-4" key={data.id}>
+              <div className="bg-[#F3F4F6] border border-gray overflow-hidden rounded-xl  hover:translate-y-[-8px] transition" key={data?.name}>
+                <Image
+                  src={data?.img}
+                  alt="bg"
+                  className="h-[192px] 2xl:h-[232px] object-cover rounded-xl"
+                />
+                <div className="flex flex-col gap-2 p-3">
+                  <h3 className="text-lg font-bold">{data?.name}</h3>
+                  <p className="text-xs">{data?.price}</p>
+                  <p className="text-sm">{data?.binding}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };

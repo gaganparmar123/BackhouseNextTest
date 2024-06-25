@@ -4,14 +4,15 @@ const NewsLetterBanner = () => {
   return (
     <section className="bg-white">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-10 md:px-6">
-        <div className="p-12 flex lg:flex-row flex-col gap-4 lg:gap-0 text-center lg:text-left items-center justify-center mx-auto bg-black text-white rounded-xl">
+        <div className="p-8 lg:p-12 flex lg:flex-row flex-col gap-8 lg:gap-8 text-center lg:text-left items-center justify-center mx-auto bg-black text-white rounded-xl">
           <div>
             <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-white">
-              Sign up for our newsletter
+              Sign up for our <span className="text-primary-10">Newsletter</span>
             </h2>
             <p className="mx-auto mb-4 max-w-2xl font-light text-gray md:mb-4 text-lg">
               Stay up to date with the roadmap progress, announcements and
-              exclusive discounts. Be the first to know about relevant listings.
+              exclusive discounts. 
+              <span className="xl:block">Be the first to know about relevant listings.</span>
             </p>
           </div>
           <form action="#">
@@ -45,7 +46,7 @@ const NewsLetterBanner = () => {
               <div>
                 <button
                   type="submit"
-                  className="py-3 px-5 w-full text-sm font-medium text-center text-gray-600 rounded-lg border cursor-pointer bg-primary-10 border-[#f5bb09] sm:rounded-none sm:rounded-r-lg hover:bg-[#f5bb09] focus:ring-4 focus:ring-primary-300"
+                  className="py-3 px-5 w-full text-sm font-medium text-center text-gray-600 rounded-lg cursor-pointer bg-primary-10 sm:rounded-none sm:rounded-r-lg"
                 >
                   Subscribe
                 </button>

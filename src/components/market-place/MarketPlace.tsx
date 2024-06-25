@@ -7,8 +7,8 @@ const MarketPlace = () => {
     <section className="bg-white">
       <div className="grid py-8 px-4 mx-auto max-w-screen-xl lg:py-10 md:px-6 lg:gap-8 xl:gap-0 lg:py-10 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
-          <h1 className="max-w-xl mb-4 text-xl font-extrabold tracking-tight leading-none md:text-xl xl:text-2xl">
-            Tired of failing to sell your items on Facebook Marketplace or
+          <h1 className="max-w-xl mb-4 text-xl font-extrabold tracking-tight md:text-xl xl:text-2xl">
+            Tired of failing to sell your items on <span className="text-primary-10">Facebook</span> Marketplace or
             through an auctioneer?
           </h1>
           <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
@@ -17,7 +17,7 @@ const MarketPlace = () => {
           </p>
           <a
             href="#"
-            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-gray-600 rounded-lg bg-primary-10 hover:bg-[#f5bb09] focus:ring-4 focus:ring-primary-300"
+            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-gray-800 rounded-lg bg-primary-10"
           >
             Learn more
             <svg

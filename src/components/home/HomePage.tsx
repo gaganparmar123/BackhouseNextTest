@@ -136,7 +136,7 @@ const HomePage = () => {
             <div className="flex flex-col justify-end lg:pl-10 lg:py-10 pr-0 text-center lg:text-start">
               <div className="w-full xl:my-10 lg:mb-0">
                 <div>
-                  <h1 className="text-xl md:text-4xl/[60px] lg:text-4xl/[60px] 2xl:text-6xl/[80px] font-extrabold">
+                  <h1 className="text-xl md:text-4xl/[40px] lg:text-4xl/[50px] 2xl:text-5xl/[60px] font-extrabold">
                     Outsource your restaurant equipment purchasing with{" "}
                     <span className="text-primary-10">Backhouse</span>
                   </h1>

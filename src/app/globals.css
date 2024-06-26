@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Graphik", sans-serif;
+  font-weight: 400;
+  src: url("../assets/font/GraphikRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik", sans-serif;
+  font-weight: 700;
+  src: url("../assets/font/GraphikMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik", sans-serif;
+  font-weight: 700;
+  src: url("../assets/font/GraphikLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik", sans-serif;
+  font-weight: 700;
+  src: url("../assets/font/GraphikSemibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik", sans-serif;
+  font-weight: 700;
+  src: url("../assets/font/GraphikBold.otf") format("opentype");
+}
+
+body {
+  font-family: "Graphik", sans-serif;
+}
+
 /* Custom css for slider */
 .custom-slider .slick-prev:before,
 .custom-slider .slick-next:before {
@@ -15,7 +49,9 @@
 .custom-slider .slick-next {
   right: -10px;
 }
-.home-slider .slick-list, .home-slider .slick-track, .home-slider .slick-slide > div{
+.home-slider .slick-list,
+.home-slider .slick-track,
+.home-slider .slick-slide > div {
   height: 100%;
 }
 @layer utilities {

@@ -40,9 +40,9 @@ const Process = () => {
           Built by restaurateurs for restaurateurs
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8 md:pt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 md:pt-10">
         {processData?.map((data) => (
-          <div className="p-2 md:p-6 w-full md:my-4 mt-8" key={data?.title}>
+          <div className="lg:p-6 w-full md:my-4 mt-8" key={data?.title}>
             <div className="gap-4">
               <div className="text-primary-10">{data?.icon}</div>
               <h2 className="text-sm lg:text-lg mt-4">{data?.title}</h2>

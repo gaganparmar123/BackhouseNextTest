@@ -3,12 +3,7 @@ import Image from "next/image";
 import { MdMenu } from "react-icons/md";
 import AllImages from "@/constant/images";
 
-const navbarItems = [
-  "contact us",
-  "Browse Public Listings",
-  "sell with us",
-  "claim your account",
-];
+const navbarItems = ["contact us", "Browse Public Listings", "sell with us"];
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -60,14 +55,19 @@ const Navbar = () => {
             ))}
           </div>
         )}
-        <div className="flex gap-4 capitalize hidden lg:flex">
-          {navbarItems?.map((item) => (
-            <div
-              key={item}
-              className="text-dark font-medium border-b-2 border-b-transparent hover:border-b-2 hover:border-b-primary-10 cursor-pointer"
-            >
-              {item}
-            </div>
+        <div className="flex capitalize hidden lg:flex">
+          {navbarItems?.map((item, index) => (
+            <>
+              <div
+                key={item}
+                className="text-dark font-medium border-b-2 border-b-transparent hover:border-b-2 hover:border-b-primary-10 cursor-pointer"
+              >
+                {item}
+              </div>
+              {navbarItems?.length !== index + 1 && (
+                <span className="mx-2 text-primary-10 font-bold">|</span>
+              )}
+            </>
           ))}
         </div>
       </div>

@@ -1,6 +1,7 @@
 const AllImages = {
   // Add images like this
   Logo: require("../assets/images/logo.svg").default,
+  CloseIcon: require("../assets/images/closeIcon.svg").default,
   HomePage: require("../assets/images/home/home-img.png"),
   HomePageBg1: require("../assets/images/home/HomePageBg1.jpg"),
   HomePageBg2: require("../assets/images/home/HomePageBg2.jpg"),

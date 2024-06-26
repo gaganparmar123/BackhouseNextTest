@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <>
       <HomePage />
-      <EquipmentCarousel />
-      <Promotion />
       <Process />
+      <Promotion />
+      <EquipmentCarousel />
       <NewsLetterBanner />
       <MarketPlace />
       <AiButton />

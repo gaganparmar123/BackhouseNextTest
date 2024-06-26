@@ -18,7 +18,7 @@ const Chat = () => {
       <div className="flex-1 p-4 overflow-y-auto">
         {messages.map((msg: string, index: number) => (
           <div key={index} className="mb-2">
-            <div className="inline-block px-4 py-2 text-gray-600 bg-primary-10 rounded-lg">
+            <div className="inline-block px-4 py-2 bg-primary-10 rounded-lg">
               {msg}
             </div>
           </div>
@@ -27,13 +27,13 @@ const Chat = () => {
       <div className="flex items-center p-4 border-t border-gray-200">
         <input
           type="text"
-          className="flex-1 px-4 py-2 mr-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="flex-1 px-4 py-2 mr-2 border rounded-lg focus:outline-none"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Ask anything..."
         />
         <button
-          className="p-2 text-gray-600 bg-primary-10 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="p-2 bg-primary-10 rounded-full focus:outline-none"
           onClick={handleSendMessage}
         >
           <AiOutlineSend size={24} />

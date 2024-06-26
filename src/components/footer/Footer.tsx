@@ -7,7 +7,7 @@ const Footer = () => {
         <span className="block text-sm md:text-lg lg:text-xl text-gray-500 text-center">
           © 2024{" "}
           <a href="" className="hover:underline font-semibold">
-            Created by restaurateurs for restaurateurs
+            Backhouse, Inc
           </a>
           . All Rights Reserved.
         </span>

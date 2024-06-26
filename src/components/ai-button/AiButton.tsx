@@ -7,10 +7,10 @@ const AiButton = () => {
   const [showPopover, setShowPopover] = useState(false);
   const [fixedPopover, setFixedPopover] = useState(false);
   return (
-    <div className="fixed bottom-20 md:bottom-16 lg:bottom-6 right-0 md:right-0 flex justify-center">
+    <div className="fixed bottom-14 md:bottom-16 lg:bottom-6 right-0 md:right-0 flex justify-center">
       <button
         type="button"
-        className="text-gray-600 bg-primary-10 focus:outline-none font-bold rounded-lg text-sm px-5 py-2.5 me-3 text-center"
+        className="bg-primary-10 focus:outline-none font-bold rounded-lg text-sm px-5 py-2.5 me-3 text-center"
         onMouseEnter={() => setShowPopover(true)}
         onMouseLeave={() => setShowPopover(false)}
         onClick={() => setFixedPopover(!fixedPopover)}
